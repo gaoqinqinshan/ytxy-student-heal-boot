@@ -1,0 +1,26 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: student-document
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/healthmanager?&serverTimezone=GMT%2B8&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+      username: root
+      password: word
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+
+  mvc:
+    view:
+      prefix: /pages/
+      suffix: .html
+
+  mybatis-plus:
+    mapper-locations: mapper/*.xml
+    type-aliases-package: com.lyxy.studentdocument.entity
+    configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
