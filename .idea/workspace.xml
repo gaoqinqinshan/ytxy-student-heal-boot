@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="pom配置">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="过滤器">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/config/SwaggerConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +51,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.config" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -61,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696950531281</updated>
-      <workItem from="1696950532300" duration="2883000" />
+      <workItem from="1696950532300" duration="3276000" />
     </task>
     <task id="LOCAL-00001" summary="pom配置">
       <option name="closed" value="true" />
@@ -71,7 +73,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696952613989</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="分页">
+      <option name="closed" value="true" />
+      <created>1696953747906</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696953747906</updated>
+    </task>
+    <task id="LOCAL-00003" summary="过滤器">
+      <option name="closed" value="true" />
+      <created>1696953869703</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696953869703</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +120,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pom配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom配置" />
+    <MESSAGE value="分页" />
+    <MESSAGE value="过滤器" />
+    <option name="LAST_COMMIT_MESSAGE" value="过滤器" />
   </component>
 </project>
