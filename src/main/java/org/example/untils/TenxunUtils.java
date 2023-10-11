@@ -24,6 +24,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.UUID;
 
+/**
+ * 腾讯云的相关配置
+ */
 @Slf4j
 @Component
 @PropertySource(value = "classpath:tengxunyun.properties")

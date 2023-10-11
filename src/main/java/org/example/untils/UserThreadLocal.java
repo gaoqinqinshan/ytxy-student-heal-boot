@@ -1,7 +1,6 @@
 package org.example.untils;
-
-
 import org.example.entity.User;
+
 
 public class UserThreadLocal {
 

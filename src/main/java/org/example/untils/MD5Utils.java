@@ -1,5 +1,8 @@
 package org.example.untils;
 
+/**
+ * md5 加密
+ */
 
 import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.util.ByteSource;
