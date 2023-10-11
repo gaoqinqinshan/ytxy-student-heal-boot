@@ -14,24 +14,20 @@ import java.util.Date;
  * 用户实例化
  */
 @Data
+@EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @ApiModel(value = "User对象", description = "")
-@EqualsAndHashCode(callSuper = false)
 public class User implements Serializable {
 
-    //定义程序序列化ID
-    private static final long serialVersionUID = 1;
-
-    //Mybatis-plus用来实现自增的(id 需要自增)
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    //创建时间
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date createDatetime;
-    //更新时间
+
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date updateDatetime;
+
 
     /**
      * 出生

@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import io.swagger.models.auth.In;
 import org.example.entity.User;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 import java.util.concurrent.locks.Condition;
@@ -18,7 +19,7 @@ public interface UserService extends IService<User> {
     /**
      * 通过key选择用户
      */
-    User SelectByKey(Integer userId);
+    User selectByKey(Integer userId);
 
     /**
      * 通过角色id选择
@@ -36,4 +37,5 @@ public interface UserService extends IService<User> {
     Page<User> selectPage(Condition condition);
 
     User updateById(Integer id);
+    ResponseEntity<User> update(User user);
 }

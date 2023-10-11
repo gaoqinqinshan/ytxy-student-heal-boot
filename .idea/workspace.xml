@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="user对象实例化">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/UserMapper.java" afterDir="false" />
+    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="用户登录">
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Resources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/ResourcesMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ResourcesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ResourcesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/UserServeImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/AnalysisData.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/BindInfo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/Clause.java" afterDir="false" />
@@ -20,12 +13,23 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/HealthDTO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/InfoDTO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/InfoReadDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/UserThreadLocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/MD5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/TenxunUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/Vo/ResourceVO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/Vo/SuggestionVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tengxunyun.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/YitonghealApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/YitonghealApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/advice/ExceptionEnums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/advice/ExceptionEnums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/advice/ExceptionResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/advice/ExceptionResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/advice/MyExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/advice/MyExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/FilterConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/MybatisPlusConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,40 +60,42 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/19153/Desktop/yingtong-heal-boot/src/main/java/org/example/untils",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "44765b594da5cf67934273335a8600ae",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/19153/Desktop/yingtong-heal-boot/src/main/java/org/example/untils&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;44765b594da5cf67934273335a8600ae&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example\untils" />
-      <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example" />
+      <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example\advice" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\resources" />
+      <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\resources\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.example.service" />
       <recent name="org.example.entity" />
+      <recent name="org.example.advice" />
+      <recent name="org.example.controller" />
       <recent name="org.example.untils" />
-      <recent name="org.example.config" />
+      <recent name="org.example.service" />
     </key>
   </component>
   <component name="RunManager">
@@ -122,7 +128,9 @@
       <updated>1696950531281</updated>
       <workItem from="1696950532300" duration="3493000" />
       <workItem from="1697008364509" duration="20000" />
-      <workItem from="1697015431601" duration="8020000" />
+      <workItem from="1697015431601" duration="9924000" />
+      <workItem from="1697045293241" duration="2587000" />
+      <workItem from="1697054885229" duration="368000" />
     </task>
     <task id="LOCAL-00001" summary="pom配置">
       <option name="closed" value="true" />
@@ -172,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697017813505</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="用户登录">
+      <option name="closed" value="true" />
+      <created>1697023630515</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697023630515</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +224,7 @@
     <MESSAGE value="Swagger配置" />
     <MESSAGE value="配置" />
     <MESSAGE value="user对象实例化" />
-    <option name="LAST_COMMIT_MESSAGE" value="user对象实例化" />
+    <MESSAGE value="用户登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户登录" />
   </component>
 </project>
