@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="配置">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/YitonghealApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/User.java" afterDir="false" />
+    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="user对象实例化">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Resources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/ResourcesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ResourcesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ResourcesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/UserServeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/AnalysisData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/BindInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/Clause.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/Condition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/HealthDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/InfoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/InfoReadDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/UserThreadLocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/Vo/ResourceVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/Vo/SuggestionVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -32,7 +50,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -43,23 +65,30 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/19153/Desktop/yingtong-heal-boot/src/main/java/org/example",
+    "last_opened_file_path": "C:/Users/19153/Desktop/yingtong-heal-boot/src/main/java/org/example/untils",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "44765b594da5cf67934273335a8600ae",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example\untils" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example" />
+      <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\resources" />
+      <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\resources\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.service" />
+      <recent name="org.example.entity" />
+      <recent name="org.example.untils" />
       <recent name="org.example.config" />
     </key>
   </component>
@@ -93,7 +122,7 @@
       <updated>1696950531281</updated>
       <workItem from="1696950532300" duration="3493000" />
       <workItem from="1697008364509" duration="20000" />
-      <workItem from="1697015431601" duration="2365000" />
+      <workItem from="1697015431601" duration="8020000" />
     </task>
     <task id="LOCAL-00001" summary="pom配置">
       <option name="closed" value="true" />
@@ -135,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696954265806</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="user对象实例化">
+      <option name="closed" value="true" />
+      <created>1697017813505</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697017813505</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +207,7 @@
     <MESSAGE value="过滤器" />
     <MESSAGE value="Swagger配置" />
     <MESSAGE value="配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置" />
+    <MESSAGE value="user对象实例化" />
+    <option name="LAST_COMMIT_MESSAGE" value="user对象实例化" />
   </component>
 </project>
