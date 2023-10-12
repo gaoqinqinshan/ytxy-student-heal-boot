@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="shiro 拦截器">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ResourcesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/ResourcesMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ResourcesServe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/ResourcesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ResourcesMapper.xml" afterDir="false" />
+    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="user功能全部完善完毕">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Resources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/impl/UserServeImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/untils/DTO/Condition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +113,7 @@
       <workItem from="1697008364509" duration="20000" />
       <workItem from="1697015431601" duration="9924000" />
       <workItem from="1697045293241" duration="2587000" />
-      <workItem from="1697054885229" duration="7781000" />
+      <workItem from="1697054885229" duration="11050000" />
     </task>
     <task id="LOCAL-00001" summary="pom配置">
       <option name="closed" value="true" />
@@ -191,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697056084567</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="user功能全部完善完毕">
+      <option name="closed" value="true" />
+      <created>1697077001125</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697077001125</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +234,7 @@
     <MESSAGE value="用户登录" />
     <MESSAGE value="DTO 和 VO 的编写" />
     <MESSAGE value="shiro 拦截器" />
-    <option name="LAST_COMMIT_MESSAGE" value="shiro 拦截器" />
+    <MESSAGE value="user功能全部完善完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value="user功能全部完善完毕" />
   </component>
 </project>
