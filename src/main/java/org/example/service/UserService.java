@@ -4,10 +4,10 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import io.swagger.models.auth.In;
 import org.example.entity.User;
+import org.example.untils.DTO.Condition;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
-import java.util.concurrent.locks.Condition;
 
 public interface UserService extends IService<User> {
 
