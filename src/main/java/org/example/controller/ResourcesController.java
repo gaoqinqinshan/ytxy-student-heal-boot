@@ -1,21 +1,20 @@
-package org.example.controller;
-
-
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.example.service.ResourcesServe;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
-
-import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
+//package org.example.controller;
+//
+//
+//import io.swagger.annotations.Api;
+//import io.swagger.annotations.ApiOperation;
+//import lombok.extern.slf4j.Slf4j;
+//import org.apache.shiro.SecurityUtils;
+//import org.apache.shiro.authz.annotation.RequiresPermissions;
+//import org.example.service.ResourcesServe;
+//import org.springframework.http.ResponseEntity;
+//import org.springframework.stereotype.Controller;
+//import org.springframework.web.bind.annotation.*;
+//import javax.annotation.Resource;
+//import java.util.ArrayList;
+//import java.util.Date;
+//import java.util.List;
+//
 ///**
 // * <p>
 // *  前端控制器
@@ -102,4 +101,4 @@ import java.util.List;
 //        throw new MyException(ExceptionEnums.UPDATE_ERROR);
 //    }
 //}
-
+//
