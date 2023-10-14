@@ -22,9 +22,6 @@ public interface RoleService extends IService<Role> {
 
     /**
      * 分页
-     *
-     * @param collection
-     * @return
      */
     Page selectPage(Condition condition);
 }

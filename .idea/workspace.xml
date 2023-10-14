@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="角色绑定相关功能完成">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/HealthDocumentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/HealthDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/HealthDocumentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/HealthDocumentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/HealthDocumentMapper.xml" afterDir="false" />
+    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="健康建议完成">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CheckInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/CheckInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/CheckInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CheckInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/CheckInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shiro/AuthRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shiro/CredentialMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shiro/ShiroConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shiro/ShiroService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/shiro/SpringContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CheckInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StudentHealthManageBootApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/RoleResourceBindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/RoleResourceBindController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/ResourcesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ResourcesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/RoleService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +60,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/19153/Desktop/yingtong-heal-boot/src/main/resources/mapper&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/19153/Desktop/yingtong-heal-boot/src/main/java/org/example&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
@@ -66,21 +75,31 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\resources\mapper" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example" />
+      <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\resources\mapper" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example\untils" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example\advice" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="org.example.shiro" />
+      <recent name="org.example.controller" />
       <recent name="org.example.service.impl" />
       <recent name="org.example.service" />
-      <recent name="org.example.dao" />
-      <recent name="org.example.controller" />
-      <recent name="org.example.entity" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.StudentHealthManageBootApplicationTests.contextLoads">
+    <configuration name="StudentHealthManageBootApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yingtong-heal-boot" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StudentHealthManageBootApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="YitonghealApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="yingtong-heal-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.YitonghealApplication" />
@@ -96,6 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentHealthManageBootApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.YitonghealApplication" />
       </list>
     </recent_temporary>
@@ -118,7 +138,9 @@
       <workItem from="1697054885229" duration="11815000" />
       <workItem from="1697182293938" duration="2818000" />
       <workItem from="1697201159000" duration="3616000" />
-      <workItem from="1697266725853" duration="1178000" />
+      <workItem from="1697266725853" duration="2761000" />
+      <workItem from="1697269593430" duration="1231000" />
+      <workItem from="1697278209383" duration="462000" />
     </task>
     <task id="LOCAL-00001" summary="pom配置">
       <option name="closed" value="true" />
@@ -216,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697203921880</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="健康建议完成">
+      <option name="closed" value="true" />
+      <created>1697267926734</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1697267926734</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +288,7 @@
     <MESSAGE value="user功能全部完善完毕" />
     <MESSAGE value="role功能全部完善完毕" />
     <MESSAGE value="角色绑定相关功能完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="角色绑定相关功能完成" />
+    <MESSAGE value="健康建议完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="健康建议完成" />
   </component>
 </project>
