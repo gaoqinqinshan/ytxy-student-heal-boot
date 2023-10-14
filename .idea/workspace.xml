@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="role功能全部完善完毕">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/RoleResourceBindController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/RoleResourceBindMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/RoleResourceBind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/RoleResourceBindService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/RoleResourceBindServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/RoleResourceBindMapper.xml" afterDir="false" />
+    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="角色绑定相关功能完成">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/HealthDocumentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/HealthDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/HealthDocumentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/HealthDocumentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/HealthDocumentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/ResourcesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ResourcesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/RoleResourceBindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/RoleResourceBindController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,10 +74,10 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.service.impl" />
+      <recent name="org.example.service" />
+      <recent name="org.example.dao" />
       <recent name="org.example.controller" />
       <recent name="org.example.entity" />
-      <recent name="org.example.advice" />
-      <recent name="org.example.untils" />
     </key>
   </component>
   <component name="RunManager">
@@ -120,7 +117,8 @@
       <workItem from="1697045293241" duration="2587000" />
       <workItem from="1697054885229" duration="11815000" />
       <workItem from="1697182293938" duration="2818000" />
-      <workItem from="1697201159000" duration="2734000" />
+      <workItem from="1697201159000" duration="3616000" />
+      <workItem from="1697266725853" duration="1178000" />
     </task>
     <task id="LOCAL-00001" summary="pom配置">
       <option name="closed" value="true" />
@@ -210,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697080503760</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="角色绑定相关功能完成">
+      <option name="closed" value="true" />
+      <created>1697203921880</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1697203921880</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +257,7 @@
     <MESSAGE value="shiro 拦截器" />
     <MESSAGE value="user功能全部完善完毕" />
     <MESSAGE value="role功能全部完善完毕" />
-    <option name="LAST_COMMIT_MESSAGE" value="role功能全部完善完毕" />
+    <MESSAGE value="角色绑定相关功能完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="角色绑定相关功能完成" />
   </component>
 </project>

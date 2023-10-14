@@ -4,7 +4,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.example.advice.ExceptionEnums;
 import org.example.advice.MyException;
-import org.example.dao.RoleResourceBindMapper;
 import org.example.service.RoleResourceBindService;
 import org.example.untils.DTO.BindInfo;
 import org.springframework.http.ResponseEntity;
