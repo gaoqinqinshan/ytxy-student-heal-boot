@@ -60,7 +60,7 @@ public class ShiroService {
         //未授权跳转url
         filterChainDefinitionMap.put("/unauthorized","anon");
         // 加载数据库中配置的资源权限列表
-        List<org.example.entity.Resources> resourcesList = resourcesMapper.listUrlAndPermission();
+        List<Resources> resourcesList = resourcesMapper.listUrlAndPermission();
         for (Resources resource : resourcesList) {
             if (!StringUtils.isEmpty(resource.getUrl()) && !StringUtils.isEmpty(resource.getPermission())) {
                 String permission = "perms[" + resource.getPermission() + "]";

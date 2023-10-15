@@ -6,6 +6,9 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 过滤器
+ */
 @Slf4j
 @Configuration
 public class FilterConfig {

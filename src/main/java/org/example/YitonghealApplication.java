@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @CrossOrigin
 @SpringBootApplication
-@MapperScan("org.example.dao")
+//@MapperScan("org.example.dao")
 public class YitonghealApplication {
     public static void main(String[] args) {
         SpringApplication.run(YitonghealApplication.class,args);

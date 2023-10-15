@@ -34,7 +34,7 @@ public class AuthRealm extends AuthorizingRealm {
     private UserService userService;
     @Resource
     private ResourcesMapper resourcesMapper;
-    @Resource
+    @Autowired
     private RoleService roleService;
 
     /**

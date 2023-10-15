@@ -7,16 +7,17 @@ import org.example.dao.RoleMapper;
 import org.example.entity.Role;
 import org.example.service.RoleService;
 import org.example.untils.DTO.Condition;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
-
+@Service
 public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements RoleService {
 
 
     @Resource
-    RoleMapper roleMapper;
+    private RoleMapper roleMapper;
 
     /**
      * 选择所有角色功能的具体实现

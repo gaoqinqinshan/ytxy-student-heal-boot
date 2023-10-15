@@ -6,7 +6,8 @@ spring:
     name: ytxy.heal
   datasource:
     druid:
-      url: jdbc:mysql://localhost:3306/healthmanager?&serverTimezone=GMT%2B8&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+      url: jdbc:mysql://localhost:3306/healthmanager?&serverTimezone=GMT%2B8&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+
       username: root
       password: word
 
@@ -24,3 +25,5 @@ spring:
     type-aliases-package: org.example.entity
     configuration:
       log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+

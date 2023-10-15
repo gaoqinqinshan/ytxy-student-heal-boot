@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 /**
- * 错误返回信息
+ * 错误返回信息(400)
  */
 @Getter
 @NoArgsConstructor

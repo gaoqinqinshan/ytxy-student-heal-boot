@@ -80,6 +80,18 @@ public class UserController {
     }
 
     /**
+     * 返回指定ID的数据
+     * @param id
+     * @return
+     */
+    @ApiOperation(value = "基础接口: 返回指定ID的数据")
+    @GetMapping(value = "get/{id}")
+    public ResponseEntity<User> get(@PathVariable("id") Integer id) {
+        User user = userService.selectByKey(id);
+        return ResponseEntity.ok(user);
+    }
+
+    /**
      * 添加用户
      *
      * @param user
