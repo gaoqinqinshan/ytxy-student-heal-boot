@@ -1,6 +1,7 @@
 package org.example.controller;
 
 
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
@@ -25,17 +26,12 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * <p>
- * 前端控制器
- * </p>
- *
- * @author testjava
- * @since 2022-10-12
  */
 @Slf4j
 @Api(tags = "体检表信息接口")
 @Controller
 @RequestMapping(value = "api/checkInfo")
+@CrossOrigin
 public class CheckInfoController {
 
     @Resource
@@ -161,6 +157,13 @@ public class CheckInfoController {
             return ResponseEntity.ok("删除成功");
         }
         throw new MyException(ExceptionEnums.DELETE_ERROR);
+    }
+
+    @RequestMapping("/test")
+    public ResponseEntity test(){
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("key","333");
+        return ResponseEntity.ok(jsonObject);
     }
 }
 

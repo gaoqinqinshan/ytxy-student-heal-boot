@@ -4,25 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="完事">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/HealthDocumentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/opai/ChatRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/opai/ChatResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="第一轮优化">
+      <change afterPath="$PROJECT_DIR$/src/test/java/OpenAiClientTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/YitonghealApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/YitonghealApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/advice/ExceptionEnums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/advice/ExceptionEnums.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/FilterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shiro/AuthRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shiro/AuthRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shiro/CredentialMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shiro/CredentialMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shiro/ShiroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shiro/ShiroService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StudentHealthManageBootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StudentHealthManageBootApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CheckInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CheckInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tengxunyun.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tengxunyun.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +49,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/19153/Desktop/yingtong-heal-boot/src/main/java/org/example/controller&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/19153/Desktop/yingtong-heal-boot/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -77,43 +64,56 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\resources" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example\controller" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\resources\mapper" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example\untils" />
-      <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example\advice" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.example.untils" />
       <recent name="" />
+      <recent name="org.example.untils" />
       <recent name="org.example.shiro" />
       <recent name="org.example.controller" />
       <recent name="org.example.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.YitonghealApplication">
-    <configuration name="StudentHealthManageBootApplicationTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StudentHealthManageBootApplicationTests" />
-      <module name="yingtong-heal-boot" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentHealthManageBootApplicationTests.chat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OpenAiClientTest.chat">
+    <configuration name="OpenAiClientTest.chat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yingtong-heal-boot" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StudentHealthManageBootApplicationTests" />
-      <option name="METHOD_NAME" value="chat(java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="OpenAiClientTest" />
+      <option name="METHOD_NAME" value="chat" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentHealthManageBootApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenAiClientTest.completionsV2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yingtong-heal-boot" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StudentHealthManageBootApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="MAIN_CLASS_NAME" value="OpenAiClientTest" />
+      <option name="METHOD_NAME" value="completionsV2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenAiClientTest.completionsV3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yingtong-heal-boot" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OpenAiClientTest" />
+      <option name="METHOD_NAME" value="completionsV3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenAiStreamClientTest.completions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yingtong-heal-boot" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OpenAiStreamClientTest" />
+      <option name="METHOD_NAME" value="completions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,10 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OpenAiClientTest.chat" />
         <item itemvalue="Spring Boot.YitonghealApplication" />
-        <item itemvalue="JUnit.StudentHealthManageBootApplicationTests.chat" />
-        <item itemvalue="Application.StudentHealthManageBootApplicationTests" />
-        <item itemvalue="JUnit.StudentHealthManageBootApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.OpenAiClientTest.completionsV2" />
+        <item itemvalue="JUnit.OpenAiClientTest.completionsV3" />
+        <item itemvalue="JUnit.OpenAiStreamClientTest.completions" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +165,12 @@
       <workItem from="1697278209383" duration="10082000" />
       <workItem from="1697294377843" duration="1114000" />
       <workItem from="1697295526627" duration="794000" />
-      <workItem from="1697353994791" duration="1111000" />
+      <workItem from="1697353994791" duration="7192000" />
+      <workItem from="1697368291534" duration="672000" />
+      <workItem from="1697370828260" duration="1335000" />
+      <workItem from="1697373107006" duration="313000" />
+      <workItem from="1697373904250" duration="1158000" />
+      <workItem from="1697463052049" duration="2188000" />
     </task>
     <task id="LOCAL-00001" summary="pom配置">
       <option name="closed" value="true" />
@@ -278,11 +284,30 @@
       <option name="project" value="LOCAL" />
       <updated>1697278708901</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="第一轮优化">
+      <option name="closed" value="true" />
+      <created>1697355226706</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1697355226707</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:io.reactivex.rxjava2:rxjava" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-websocket" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -322,6 +347,7 @@
     <MESSAGE value="角色绑定相关功能完成" />
     <MESSAGE value="健康建议完成" />
     <MESSAGE value="完事" />
-    <option name="LAST_COMMIT_MESSAGE" value="完事" />
+    <MESSAGE value="第一轮优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一轮优化" />
   </component>
 </project>
