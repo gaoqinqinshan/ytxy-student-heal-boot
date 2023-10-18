@@ -1,0 +1,6 @@
+#需要替换成自己的密钥
+apiKey: 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
+#Gpt聊天请求的接口
+apiUrl: https://api.openai.com/v1/completions
+#这个对话的内容
+apiPrompt: Hello，GPT!

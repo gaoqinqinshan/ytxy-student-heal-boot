@@ -51,7 +51,8 @@ public class UserController {
     @ResponseBody
     @GetMapping("/login")
     public ResponseEntity login() {
-        return ResponseEntity.status(301).body("登录过期或者未登录,请退出重新登录");
+        return null;
+//        return ResponseEntity.status(301).body("登录过期或者未登录,请退出重新登录");
     }
 
     /**

@@ -53,10 +53,13 @@ public class ShiroService {
 
         //设置文件上传为匿名访问
         filterChainDefinitionMap.put("/api/uploadFile/upload", "anon");
+        // TODO chatgpt放行接口 临时
+        filterChainDefinitionMap.put("/goChatGpt/**", "anon");
 
         filterChainDefinitionMap.put("/login", "anon");
         filterChainDefinitionMap.put("/api/role/list", "anon");
         filterChainDefinitionMap.put("/api/user/add", "anon");
+        filterChainDefinitionMap.put("/api/**","anon");
         //未授权跳转url
         filterChainDefinitionMap.put("/unauthorized","anon");
         // 加载数据库中配置的资源权限列表

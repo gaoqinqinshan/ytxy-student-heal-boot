@@ -1,3 +1,5 @@
+package org.example.opai;
+
 import com.unfbx.chatgpt.OpenAiClient;
 import com.unfbx.chatgpt.entity.chat.ChatCompletion;
 import com.unfbx.chatgpt.entity.chat.ChatCompletionResponse;
@@ -5,25 +7,62 @@ import com.unfbx.chatgpt.entity.chat.Message;
 import com.unfbx.chatgpt.function.KeyRandomStrategy;
 import com.unfbx.chatgpt.interceptor.OpenAILogger;
 import com.unfbx.chatgpt.interceptor.OpenAiResponseInterceptor;
-import lombok.extern.slf4j.Slf4j;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
-import org.junit.Before;
-import org.junit.Test;
+import org.example.entity.result.HttpResult;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
-import java.util.*;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicReference;
 
-@Slf4j
-public class OpenAiClientTest {
+@Service("getService")
+public class OpenAiGptServiceImpl implements OpenAiGptService {
+    @Override
+    public String sendGptRequest(String apiUrl, String apiKey, String prompt) throws IOException {
 
-    private OpenAiClient v2;
+        // 创建HTTP客户端，设置请求方法和请求头
+        HttpURLConnection conn = (HttpURLConnection) new URL(apiUrl).openConnection();
+        conn.setRequestMethod("POST");
+        conn.setRequestProperty("Authorization", "Bearer " + apiKey);
+        conn.setRequestProperty("Content-Type", "application/json");
+        conn.setRequestProperty("accept", "*/*");
+        conn.setRequestProperty("connection", "Keep-Alive");
 
-    @Before
-    public void before() {
-        //可以为null
+        // 准备请求正文和文本提示
+        String requestBody = String.format("{\"prompt\": \"%s\", \"max_tokens\": 70, \"temperature\": 0, \"model\": \"text-davinci-003\"}", prompt);
+
+        // 设置请求正文，发送HTTP请求
+        conn.setDoOutput(true);
+        conn.setDoInput(true);
+        conn.getOutputStream().write(requestBody.getBytes(StandardCharsets.UTF_8));
+
+        // 解析返回的参数及信息
+        BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+        StringBuilder response = new StringBuilder();
+        String line;
+        while ((line = reader.readLine()) != null) {
+            response.append(line);
+        }
+        reader.close();
+
+        // 返回响应字符串
+        return response.toString();
+    }
+
+
+    public HttpResult test(@PathVariable String t){
         Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 7890));
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor(new OpenAILogger());
         //！！！！千万别再生产或者测试环境打开BODY级别日志！！！！
@@ -38,7 +77,7 @@ public class OpenAiClientTest {
                 .writeTimeout(60, TimeUnit.SECONDS)
                 .readTimeout(60, TimeUnit.SECONDS)
                 .build();
-        v2 = OpenAiClient.builder()
+        OpenAiClient v2 = OpenAiClient.builder()
                 //支持多key传入，请求时候随机选择
                 .apiKey(Arrays.asList("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"))
                 //自定义key的获取策略：默认KeyRandomStrategy
@@ -48,13 +87,9 @@ public class OpenAiClientTest {
                 //自己做了代理就传代理地址，没有可不不传,(关注公众号回复：openai ，获取免费的测试代理地址)
 //                .apiHost("https://自己代理的服务器地址/")
                 .build();
-    }
 
-    @Test
-
-    public void chat() {
         //聊天模型：gpt-3.5
-        Message message = Message.builder().role(Message.Role.USER).content("成人的bim多少是正常？").build();
+        Message message = Message.builder().role(Message.Role.USER).content(t).build();
         ChatCompletion chatCompletion = ChatCompletion
                 .builder()
                 .messages(Collections.singletonList(message))
@@ -62,9 +97,11 @@ public class OpenAiClientTest {
                 .build();
         ChatCompletionResponse chatCompletionResponse = v2.chatCompletion(chatCompletion);
         System.out.println(chatCompletionResponse.getChoices().toString());
+        AtomicReference<Message> message1 = new AtomicReference<>(new Message());
         chatCompletionResponse.getChoices().forEach(e -> {
-            System.out.println(e.getMessage());
-
+            message1.set(e.getMessage());
         });
+
+        return HttpResult.success(message1);
     }
 }

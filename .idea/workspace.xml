@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="第一轮优化">
-      <change afterPath="$PROJECT_DIR$/src/test/java/OpenAiClientTest.java" afterDir="false" />
+    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="openai 加入">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/config/OkhttpConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/HttpResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/opai/OpenAiGptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/opai/OpenAiGptEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/opai/OpenAiGptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/opai/OpenAiGptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/openAI.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CheckInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CheckInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tengxunyun.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tengxunyun.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/shiro/ShiroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/shiro/ShiroService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OpenAiClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OpenAiClientTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,35 +49,41 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/19153/Desktop/yingtong-heal-boot/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;44765b594da5cf67934273335a8600ae&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/19153/Desktop/yingtong-heal-boot/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "http.proxy",
+    "spring.configuration.checksum": "44765b594da5cf67934273335a8600ae",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.entity" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\resources" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example\controller" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\resources\mapper" />
       <recent name="C:\Users\19153\Desktop\yingtong-heal-boot\src\main\java\org\example\untils" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="org.example.opai" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -78,7 +93,7 @@
       <recent name="org.example.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OpenAiClientTest.chat">
+  <component name="RunManager" selected="Spring Boot.YitonghealApplication">
     <configuration name="OpenAiClientTest.chat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yingtong-heal-boot" />
       <option name="PACKAGE_NAME" value="" />
@@ -134,8 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OpenAiClientTest.chat" />
         <item itemvalue="Spring Boot.YitonghealApplication" />
+        <item itemvalue="JUnit.OpenAiClientTest.chat" />
         <item itemvalue="JUnit.OpenAiClientTest.completionsV2" />
         <item itemvalue="JUnit.OpenAiClientTest.completionsV3" />
         <item itemvalue="JUnit.OpenAiStreamClientTest.completions" />
@@ -170,7 +185,7 @@
       <workItem from="1697370828260" duration="1335000" />
       <workItem from="1697373107006" duration="313000" />
       <workItem from="1697373904250" duration="1158000" />
-      <workItem from="1697463052049" duration="2188000" />
+      <workItem from="1697463052049" duration="18788000" />
     </task>
     <task id="LOCAL-00001" summary="pom配置">
       <option name="closed" value="true" />
@@ -292,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697355226707</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="openai 加入">
+      <option name="closed" value="true" />
+      <created>1697465471313</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1697465471313</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,6 +371,7 @@
     <MESSAGE value="健康建议完成" />
     <MESSAGE value="完事" />
     <MESSAGE value="第一轮优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一轮优化" />
+    <MESSAGE value="openai 加入" />
+    <option name="LAST_COMMIT_MESSAGE" value="openai 加入" />
   </component>
 </project>
