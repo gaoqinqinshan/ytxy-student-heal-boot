@@ -61,7 +61,7 @@ public class OpenAiGptServiceImpl implements OpenAiGptService {
         return response.toString();
     }
 
-
+    @Override
     public HttpResult test(@PathVariable String t) {
         Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 7890));
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor(new OpenAILogger());
