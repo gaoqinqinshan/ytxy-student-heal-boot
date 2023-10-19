@@ -45,6 +45,8 @@ public class OpenAiClientTest {
                 //.keyStrategy(new KeyRandomStrategy())
                 .keyStrategy(new KeyRandomStrategy())
                 .okHttpClient(okHttpClient)
+                //自己做了代理就传代理地址，没有可不不传,(关注公众号回复：openai ，获取免费的测试代理地址)
+//                .apiHost("https://自己代理的服务器地址/")
                 .build();
     }
 

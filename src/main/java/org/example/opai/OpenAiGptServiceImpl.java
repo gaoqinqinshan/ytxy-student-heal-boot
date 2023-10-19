@@ -62,7 +62,7 @@ public class OpenAiGptServiceImpl implements OpenAiGptService {
     }
 
 
-    public HttpResult test(@PathVariable String t){
+    public HttpResult test(@PathVariable String t) {
         Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 7890));
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor(new OpenAILogger());
         //！！！！千万别再生产或者测试环境打开BODY级别日志！！！！
@@ -79,7 +79,9 @@ public class OpenAiGptServiceImpl implements OpenAiGptService {
                 .build();
         OpenAiClient v2 = OpenAiClient.builder()
                 //支持多key传入，请求时候随机选择
-                .apiKey(Arrays.asList("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"))
+                .apiKey(Collections.singletonList(
+                        "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"
+                ))
                 //自定义key的获取策略：默认KeyRandomStrategy
                 //.keyStrategy(new KeyRandomStrategy())
                 .keyStrategy(new KeyRandomStrategy())
