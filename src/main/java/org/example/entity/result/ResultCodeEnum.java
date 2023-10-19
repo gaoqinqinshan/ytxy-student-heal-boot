@@ -1,5 +1,11 @@
 package org.example.entity.result;
 
+
+/**
+ * 响应状态码
+ */
+
+
 public enum ResultCodeEnum {
 
     /*** 通用部分 100 - 599***/

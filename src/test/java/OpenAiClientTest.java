@@ -40,13 +40,11 @@ public class OpenAiClientTest {
                 .build();
         v2 = OpenAiClient.builder()
                 //支持多key传入，请求时候随机选择
-                .apiKey(Arrays.asList("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"))
+                .apiKey(Arrays.asList("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"))
                 //自定义key的获取策略：默认KeyRandomStrategy
                 //.keyStrategy(new KeyRandomStrategy())
                 .keyStrategy(new KeyRandomStrategy())
                 .okHttpClient(okHttpClient)
-                //自己做了代理就传代理地址，没有可不不传,(关注公众号回复：openai ，获取免费的测试代理地址)
-//                .apiHost("https://自己代理的服务器地址/")
                 .build();
     }
 

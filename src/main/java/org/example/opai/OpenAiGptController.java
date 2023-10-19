@@ -21,15 +21,6 @@ public class OpenAiGptController {
 
     @GetMapping("/api/goChatGpt/{t}")
     public HttpResult goChatGpt(@PathVariable String t){
-//        log.info("问题为：{}",t);
-//        String resule = null;
-//        try {
-//            resule = openAiGptService.sendGptRequest(openAiGptEntity.getApiUrl(), openAiGptEntity.getApiKey(), t);
-//            System.out.println(resule);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        return ResponseEntity.ok(resule);
         return openAiGptService.test(t);
     }
 
