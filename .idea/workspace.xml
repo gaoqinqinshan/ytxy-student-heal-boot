@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="ok">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2ab90efc-d53f-426f-bf34-465d9cb7aa74" name="Changes" comment="chatgpt完成">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mail.setting" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/YitonghealApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/YitonghealApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/opai/OpenAiGptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/opai/OpenAiGptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/openAI.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/openAI.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StudentHealthManageBootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StudentHealthManageBootApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +64,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -68,6 +75,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.untils.mail" />
       <recent name="org.example.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -89,6 +97,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.YitonghealApplication">
+    <configuration name="MailUtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.untils.mail.MailUtilsTest" />
+      <module name="yingtong-heal-boot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.untils.mail.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OpenAiClientTest.chat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yingtong-heal-boot" />
       <option name="PACKAGE_NAME" value="" />
@@ -119,16 +140,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenAiStreamClientTest.completions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="yingtong-heal-boot" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="OpenAiStreamClientTest" />
-      <option name="METHOD_NAME" value="completions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="YitonghealApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="yingtong-heal-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.YitonghealApplication" />
@@ -145,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.YitonghealApplication" />
+        <item itemvalue="Application.MailUtilsTest" />
         <item itemvalue="JUnit.OpenAiClientTest.chat" />
         <item itemvalue="JUnit.OpenAiClientTest.completionsV2" />
         <item itemvalue="JUnit.OpenAiClientTest.completionsV3" />
-        <item itemvalue="JUnit.OpenAiStreamClientTest.completions" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +198,12 @@
       <workItem from="1697720707241" duration="627000" />
       <workItem from="1697721536622" duration="13000" />
       <workItem from="1697721602715" duration="27000" />
-      <workItem from="1697723981864" duration="1618000" />
+      <workItem from="1697723981864" duration="2549000" />
+      <workItem from="1697775822416" duration="10016000" />
+      <workItem from="1697873333108" duration="14000" />
+      <workItem from="1697874186065" duration="628000" />
+      <workItem from="1697967485346" duration="1348000" />
+      <workItem from="1697970851622" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="pom配置">
       <option name="closed" value="true" />
@@ -325,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697614880260</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="chatgpt完成">
+      <option name="closed" value="true" />
+      <created>1697725649205</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1697725649205</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,6 +407,7 @@
     <MESSAGE value="第一轮优化" />
     <MESSAGE value="openai 加入" />
     <MESSAGE value="ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+    <MESSAGE value="chatgpt完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="chatgpt完成" />
   </component>
 </project>

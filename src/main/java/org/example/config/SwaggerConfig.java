@@ -23,7 +23,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo()).enable(true)
                 .select()  // 选择那些路径和api会生成document
-                .apis(RequestHandlerSelectors.basePackage("com.lyxy"))
+                .apis(RequestHandlerSelectors.basePackage("com.ytxy"))
                 .paths(PathSelectors.any())
                 .build();
     }

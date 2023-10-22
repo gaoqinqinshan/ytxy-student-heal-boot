@@ -1,5 +1,11 @@
 
+import cn.hutool.core.collection.CollUtil;
+import cn.hutool.extra.mail.MailAccount;
+import cn.hutool.extra.mail.MailUtil;
+import cn.hutool.json.JSONUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.scheduling.annotation.Scheduled;
 
 @SpringBootTest
 class StudentHealthManageBootApplicationTests {
@@ -32,4 +38,30 @@ class StudentHealthManageBootApplicationTests {
 //        System.out.println(result);
 //        return JSONUtil.toBean(result, ChatResponse.class);
 //    }
+//    MailAccount account = new MailAccount();
+//        account.setHost("smtp.qq.com");//邮件服务器的SMTP地址,网易邮箱为smtp.163.com
+//        account.setPort(587);//邮件服务器的SMTP端口,QQ邮箱为465或587，网易邮箱为25
+//        account.setAuth(true);
+//        account.setFrom("xxxxxxxxxx@qq.com");//设置发送人邮箱
+//        account.setUser("xxxxxxxxxx");//发送人用户名
+//        account.setPass("xxxxxxxxxxxxxxxx");//密码或者授权码
+//        account.isSslEnable();//部分邮箱需要开启SSL
+//    /**
+//     使用SSL加密方式发送邮件 在使用QQ或Gmail邮箱时，需要强制开启SSL支持
+//     **/
+//
+//        MailUtil.send(account, CollUtil.newArrayList("xxxxxxxxxx@qq.com"), //接收人邮箱
+//            "测试主题", "TEST", false);
+
+//    MailAccount account = new MailAccount();
+//     account.setHost("smtp.qq.com");
+//     account.setPort(587);
+//     account.setAuth(true);
+//account.setFrom(email);
+//account.setUser(email);
+//account.setPass(admin.qqEmailPass);
+//MailUtil.send(account,email,"三战后台登录短信码",code,false);
+//
+
 }
+

@@ -80,7 +80,7 @@ public class OpenAiGptServiceImpl implements OpenAiGptService {
         OpenAiClient v2 = OpenAiClient.builder()
                 //支持多key传入，请求时候随机选择
                 .apiKey(Collections.singletonList(
-                        "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"
+                        "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"
                 ))
                 //自定义key的获取策略：默认KeyRandomStrategy
                 //.keyStrategy(new KeyRandomStrategy())
